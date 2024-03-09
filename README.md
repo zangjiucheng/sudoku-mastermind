@@ -56,10 +56,10 @@ Follow these instructions to get a copy of the project up and running on your lo
 
    ```bash
    cd ../frontend
-   npm start
+   npx http-server
    ```
 
-3. Open your web browser and go to `http://localhost:3000` to play Sudoku!
+3. Open your web browser and go to `http://localhost:8080` to play Sudoku!
 
 ## Screenshots
 
