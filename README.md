@@ -1,4 +1,6 @@
 # Sudoku Puzzle Game
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 
 ![Demo](demo.png)
 
@@ -68,4 +70,4 @@ Follow these instructions to get a copy of the project up and running on your lo
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](MIT) file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://opensource.org/licenses/MIT) file for details.
