@@ -63,8 +63,8 @@ Follow these instructions to get a copy of the project up and running on your lo
 
 ## Screenshots
 
-![Screenshot1](screenshots/screenshot1.png)
-![Screenshot2](screenshots/screenshot2.png)
+![Screenshot1](screenshot/screenshot1.png)
+![Screenshot2](screenshot/screenshot2.png)
 
 ## License
 
