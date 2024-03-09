@@ -65,7 +65,6 @@ Follow these instructions to get a copy of the project up and running on your lo
 
 ![Screenshot1](screenshots/screenshot1.png)
 ![Screenshot2](screenshots/screenshot2.png)
-![Screenshot3](screenshots/screenshot3.png)
 
 ## License
 
