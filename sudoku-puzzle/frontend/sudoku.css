@@ -70,13 +70,14 @@ body {
 }
 
 #play-again {
-    display: none; /* Initially hidden */
+    /*display: none; /* Initially hidden */
     position: fixed; /* Fixed position */
-    top: 53%; /* Center vertically */
-    left: 50%; /* Center horizontally */
-    transform: translate(-50%, -50%); /* Adjust for the button's own dimensions */
-    padding: 345px 290px; /* Increase padding */
-    font-size: 30px; /* Increase font size */
+    top: 50%; /* Center vertically */
+    left: 12%; /* Center horizontally */
+    transform: translate(-55%, -50%); /* Adjust for the button's own dimensions */
+    padding: 20px 50px; /* Increase padding */
+    font-size: 2em; /* Increase font size */
+
     background-color: #007BFF; /* Background color */
     color: white; /* Text color */
     border: none; /* Remove border */
