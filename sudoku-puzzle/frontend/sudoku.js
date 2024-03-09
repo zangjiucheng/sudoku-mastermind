@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var errorCount = 0; // Store the number of errors
     var errorDisplay = document.getElementById('error-count');
     var solution;
+    let correctCount;
 
 
     // Get the puzzle from the server
@@ -17,6 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
         .then(data => {
             var sudoku = data.puzzle;
             solution = data.solution;
+            correctCount = sudoku.filter(x => x != null).length;
             function cellClickHandler() {
                 // User clicks on a cell to input a number
                 var cell = this; 
@@ -43,7 +45,29 @@ document.addEventListener("DOMContentLoaded", function () {
                 .then(data => {
                     if (data.isCorrect) {
                         alert('Correct!');
-                        cell.removeEventListener('click', cellClickHandler);
+                        board.children[index].removeEventListener('click', cellClickHandler);
+                        correctCount++;
+                        var currentNumberFilledNumber = 0;
+                        if (correctCount == 81) { // Check if the player has won
+                            alert('Congratulations, you have won the game!');
+                            document.getElementById('play-again').style.display = 'block';
+                            document.querySelector('.champion-image').style.display = 'block'; // Show the champion image
+                        } else {
+                            for (let i = 0; i < 81; i++) {
+                                if (userInput == cells[i].textContent) {
+                                    currentNumberFilledNumber++;
+                                }
+                            }
+                            alert(currentNumberFilledNumber);
+                            if (currentNumberFilledNumber == 9) {
+                                alert('Congratulations, you have filled all the numbers of ' + userInput);
+                                for (let i = 0; i < 81; i++) {
+                                    if (cells[i].textContent == userInput) {
+                                        cell.style.backgroundColor = 'green';
+                                    }
+                                }
+                            }
+                        }
                     } else {
                         alert('Incorrect. Please try again.');
                         this.textContent = '';

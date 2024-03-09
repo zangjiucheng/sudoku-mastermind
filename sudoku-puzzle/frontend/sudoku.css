@@ -70,7 +70,7 @@ body {
 }
 
 #play-again {
-    /*display: none; /* Initially hidden */
+    display: none; /* Initially hidden */
     position: fixed; /* Fixed position */
     top: 50%; /* Center vertically */
     left: 12%; /* Center horizontally */
@@ -89,4 +89,16 @@ body {
 
 #play-again:hover {
     background-color: #0056b3; /* Darker background on hover */
+}
+
+.champion-image {
+    display: none; /* Initially hidden */
+    position: fixed; /* Fixed position */
+    top: 52%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for the image's own dimensions */
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.5;
 }
