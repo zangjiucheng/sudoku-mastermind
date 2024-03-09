@@ -36,12 +36,10 @@ Follow these instructions to get a copy of the project up and running on your lo
    cd sudoku-puzzle
    ```
 
-3. Install dependencies for both backend and frontend:
+3. Install dependencies for backend:
 
    ```bash
    cd backend
-   npm install
-   cd ../frontend
    npm install
    ```
 
